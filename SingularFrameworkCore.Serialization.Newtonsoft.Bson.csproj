@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <PackageId>SingularFrameworkCore.Serialization.Newtonsoft.Bson</PackageId>
-    <Version>0.1.0-alpha</Version>
+    <Version>0.1.1-alpha</Version>
     <Authors>Mohammad Ayaad</Authors>
     <Description>A library providing an implementation of SingularFrameworkCore.Repository.IEntitySerializer&lt;T,byte[]&gt; for serialization from T to string in Bson format using Newtonsoft.Bson library</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>

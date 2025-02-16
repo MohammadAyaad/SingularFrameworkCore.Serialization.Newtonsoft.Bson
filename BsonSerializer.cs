@@ -4,7 +4,7 @@ using SingularFrameworkCore.Serialization;
 
 namespace SingularFrameworkCore.Serialization.Newtonsoft.Bson;
 
-class BsonSerializer<T> : IEntitySerializer<T, byte[]>
+public class BsonSerializer<T> : IEntitySerializer<T, byte[]>
 {
     public byte[] Serialize(T entity)
     {
