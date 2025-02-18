@@ -4,7 +4,7 @@ using SingularFrameworkCore.Serialization;
 
 namespace SingularFrameworkCore.Serialization.Newtonsoft.Bson;
 
-class BsonSerializer<T> : IEntitySerializer<T, byte[]>
+public class BsonSerializer<T> : IEntitySerializer<T, byte[]>
 {
     public byte[] Serialize(T entity)
     {
@@ -16,8 +16,13 @@ class BsonSerializer<T> : IEntitySerializer<T, byte[]>
 
     public T Deserialize(byte[] bson)
     {
+        if (bson == null || bson.Length == 0)
+            throw new JsonSerializationException("Cannot deserializer an empty byte array");
         MemoryStream ms = new MemoryStream(bson);
         BsonDataReader reader = new BsonDataReader(ms);
-        return new JsonSerializer().Deserialize<T>(reader)!;
+        var result = new JsonSerializer().Deserialize<T>(reader)!;
+        if (result == null)
+            throw new JsonSerializationException("Couldn't deserialize the data.");
+        return result;
     }
 }
