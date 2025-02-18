@@ -81,4 +81,4 @@ Created by Mohammad Ayaad
 ## Related Projects
 
 - [SingularFrameworkCore](https://github.com/MohammadAyaad/SingularFrameworkCore) - The core framework this implementation is built for
-- [Newtonsoft.Bson](https://www.newtonsoft.com/Bson) - The Bson library used for serialization
+- [Newtonsoft.Json.Bson](https://www.newtonsoft.com/Bson) - The Bson library used for serialization

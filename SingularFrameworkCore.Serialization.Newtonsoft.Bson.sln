@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingularFrameworkCore.Serialization.Newtonsoft.Bson", "SingularFrameworkCore.Serialization.Newtonsoft.Bson.csproj", "{F6BBA39B-68F8-41CB-BDBD-8A10612970FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingularFrameworkCore.Serialization.Newtonsoft.Bson", "SingularFrameworkCore.Serialization.Newtonsoft.Bson\SingularFrameworkCore.Serialization.Newtonsoft.Bson.csproj", "{F6BBA39B-68F8-41CB-BDBD-8A10612970FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingularFrameworkCore.Serialization.Newtonsoft.Bson.Tests", "SingularFrameworkCore.Serialization.Newtonsoft.Bson.Tests\SingularFrameworkCore.Serialization.Newtonsoft.Bson.Tests.csproj", "{CEBBDD67-5241-4C9F-9AFB-5C1C2530A7AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +20,9 @@ Global
 		{F6BBA39B-68F8-41CB-BDBD-8A10612970FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6BBA39B-68F8-41CB-BDBD-8A10612970FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6BBA39B-68F8-41CB-BDBD-8A10612970FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBBDD67-5241-4C9F-9AFB-5C1C2530A7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBBDD67-5241-4C9F-9AFB-5C1C2530A7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBBDD67-5241-4C9F-9AFB-5C1C2530A7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBBDD67-5241-4C9F-9AFB-5C1C2530A7AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
